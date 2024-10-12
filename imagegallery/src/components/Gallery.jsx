@@ -1,3 +1,5 @@
+import { useState } from "react";
+import useFetch from "./useFetch";
 function Gallery() {
   
     const [term,setTerm]= useState('');

@@ -4,10 +4,10 @@ const ImageCard = ({ images, isloading, error }) => {
         {isloading && <div className="text-3xl">Loading..</div>}
         {error && <div className="text-3xl">{error}</div>}
   
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 m-4 ">
           {images && images.map((i) => (
-            <div key={i.id} className="max-w-sm rounded overflow-hidden shadow-lg">
-              <img src={i.webformatURL} alt="Logo" className="w-full" />
+            <div key={i.id} className="max-w-sm rounded overflow-hidden shadow-xl ">
+              <img src={i.webformatURL} alt="Logo" className= {`w-full h-64 `} />
   
               <div className="px-4 py-2">
                 <div className="text-xl">
